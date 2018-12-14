@@ -2,6 +2,7 @@
 # vim:fileencoding=utf-8
 # Author: Shinya Suzuki
 # Created: 2018-12-14
+import numpy as np
 import pandas as pd
 import argparse
 
@@ -42,6 +43,8 @@ def convert_count_to_inverval(df, tdf, pdf):
         # By day
         for i, count in row.iteritems():
 
+            if np.isnan(count):
+                continue
             # Food info
             if tdf.loc[subject, i] == 1:
                 testfood = True
@@ -55,7 +58,7 @@ def convert_count_to_inverval(df, tdf, pdf):
             # Interval of incidence
             interval = 24 / (count + 1)
 
-            for i in range(count+1):
+            for i in range(int(count+1)):
                 if i != count:
                     queue += interval
                     interval_list.append(queue)

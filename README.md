@@ -41,18 +41,20 @@ eebiic_estimate <Output_path> <Interval_path>
 In default, model number 5 will run. If you want to change your idea of the effect, please change the model by `-m` option.
 We have candidates shown below.
 
-| No. | Scale parameter | Shape parameter | Placebo effect | Test food effect | Prior distribution       |
-|-----|-----------------|-----------------|----------------|------------------|--------------------------|
-| 1   | individual      | shared          | individual     | individual       | -                        |
-| 2   | individual      | shared          | shared         | shared           | -                        |
-| 3   | shared          | shared          | shared         | shared           | -                        |
-| 4   | individual      | individual      | individual     | individual       | -                        |
-| 5   | individual      | individual      | individual     | individual       | half-normal distribution |
-| 6   | individual      | individual      | shared         | shared           | half-normal distribution |
-| 7   | individual      | individual      | individual     | shared           | half-normal distribution |
-| 8   | individual      | individual      | shared         | individual       | half-normal distribution |
-| 9   | individual      | individual      | shared         | -                | half-normal distribution |
-| 10  | individual      | individual      | -              | shared           | half-normal distribution |
+| No. | Effect of diet     | Scale parameter | Shape parameter | Placebo effect                         | Test food effect | Prior distribution       |
+|-----|--------------------|-----------------|-----------------|----------------------------------------|------------------|--------------------------|
+| 1   | To scale parameter | individual      | shared          | individual                             | individual       | -                        |
+| 2   | To scale parameter | individual      | shared          | shared                                 | shared           | -                        |
+| 3   | To scale parameter | shared          | shared          | shared                                 | shared           | -                        |
+| 4   | To scale parameter | individual      | individual      | individual                             | individual       | -                        |
+| 5   | To scale parameter | individual      | individual      | individual                             | individual       | half-normal distribution |
+| 6   | To scale parameter | individual      | individual      | shared                                 | shared           | half-normal distribution |
+| 7   | To scale parameter | individual      | individual      | individual                             | shared           | half-normal distribution |
+| 8   | To scale parameter | individual      | individual      | shared                                 | individual       | half-normal distribution |
+| 9   | To scale parameter | individual      | individual      | shared                                 | -                | half-normal distribution |
+| 10  | To scale parameter | individual      | individual      | -                                      | shared           | half-normal distribution |
+| 11  | To shape parameter | individual      | individual      | individual                             | individual       | half-normal distribution |
+| 12  | To scale parameter |                 | individual      | individual(Only in placebo food terms) | individual       | half-normal distribution |
 
 
 ## Notice

@@ -47,6 +47,7 @@ def argument_parse(argv=None):
                             "freq10",
                             "freq11",
                             "freq12",
+                            "freq13"
                         ],
                         help="Model type (default: freq5)")
     parser.add_argument("-si", "--staniter",

@@ -54,7 +54,7 @@ We have candidates shown below.
 | 9   | To scale parameter | individual      | individual      | shared                                 | -                | half-normal distribution |
 | 10  | To scale parameter | individual      | individual      | -                                      | shared           | half-normal distribution |
 | 11  | To shape parameter | individual      | individual      | individual                             | individual       | half-normal distribution |
-| 12  | To scale parameter |                 | individual      | individual(Only in placebo food terms) | individual       | half-normal distribution |
+| 12  | To scale parameter | individual      | individual      | individual(Only in placebo food terms) | individual       | half-normal distribution |
 
 
 ## Notice

@@ -30,6 +30,8 @@ These counts file can be converted and summarized to a single stacking table by
 eebiic_c2i <Interval_path> <Count_path> <Testfood_path> <Placebo_path>
 ```
 
+Please refer to the [test file](https://github.com/metagen/EEBIIC/tree/master/eebiic/tests/data/test_c2i) for the format of input files.
+
 ### Estimation
 
 Estimate effect with interval count file by

@@ -4,7 +4,7 @@ EEBIIC(pronounced by eɪ-bi-si) is an effect estimator by inident inteval counts
 
 ## Requirements
 
-* Python3 (≥ 3.6.5, checked by 3.6.5)
+* Python3 (≥ 3.4, checked by 3.6.5)
 * Libraries (automatically installed with pip)
     * Numpy
     * Pandas

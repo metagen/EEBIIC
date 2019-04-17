@@ -9,7 +9,7 @@ EEBIIC(pronounced by eɪ-bi-si) is an effect estimator by inident inteval counts
     * Numpy
     * Pandas
     * Tabulate
-    * Pystan
+    * Pystan (≤2.17.1 because of index style modification)
 
 ## How to use
 

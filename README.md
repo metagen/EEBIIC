@@ -1,8 +1,10 @@
 # Effect Estimator By Incident Interval Count(EEBIIC)
 
+EEBIIC(pronounced by eɪ-bi-si) is an effect estimator by inident inteval counts, using weibull regression based GLM.
+
 ## Requirements
 
-* Python3
+* Python3 (≥ 3.6.5, checked by 3.6.5)
 * Libraries (automatically installed with pip)
     * Numpy
     * Pandas
@@ -27,7 +29,7 @@ Before using eebiic, you have to calculate the event interval. See test files in
 These counts file can be converted and summarized to a single stacking table by
 
 ```bash
-eebiic_c2i <Interval_path> <Count_path> <Testfood_path> <Placebo_path>
+eebiic_c2i <Output_path=Interval_path> <Count_path> <Testfood_path> <Placebo_path>
 ```
 
 Please refer to the [test file](https://github.com/metagen/EEBIIC/tree/master/eebiic/tests/data/test_c2i) for the format of input files.

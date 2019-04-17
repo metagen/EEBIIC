@@ -25,7 +25,7 @@ It will take a while as stan models are compiled to C++.
 
 ### Pre-calculation
 
-Before using eebiic, you have to calculate the event interval. See test files in /eebiic/tests/data/test_c2i.
+Before using eebiic, you have to calculate the event interval if you only have count data ([tidy data format](https://www.jstatsoft.org/article/view/v059i10)). See test files in /eebiic/tests/data/test_c2i.
 These counts file can be converted and summarized to a single stacking table by
 
 ```bash

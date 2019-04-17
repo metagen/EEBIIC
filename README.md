@@ -1,6 +1,6 @@
 # Effect Estimator By Incident Interval Count(EEBIIC)
 
-EEBIIC(pronounced by eɪ-bi-si) is an effect estimator by inident inteval counts, using weibull regression based GLM.
+EEBIIC(pronounced by eɪ-bi-si) is an effect estimator by inident inteval counts, using bayesian weibull regression based on GLM.
 
 ## Requirements
 
@@ -60,6 +60,30 @@ We have candidates shown below.
 | 11  | To shape parameter | individual      | individual      | individual                             | individual       | half-normal distribution |
 | 12  | To scale parameter | individual      | individual      | individual(Only in placebo food terms) | individual       | half-normal distribution |
 | 13  | To scale parameter | individual      | individual      | -                                      | -                | half-normal distribution |
+
+Here is a head part of output file of model 5. As this is a summary table of posterior distribution.
+
+* Columns
+    * mean: mean of posterior distribution sampled for the model by MCMC algorithm
+    * se_mean sd: standard error of mean
+    * sd: standard deviation of posterior distribution
+    * 2.5, 5, 25, 50, 75, 95, 97.5%: quantile of posterior distribution
+    * n_eff: effective sampel size
+    * Rhat: Rhat value to determine the convergence
+* Row
+    * gut_state: scale parameter of weibull distribution in normal state
+    * shape: shape parameter of weibull distribution
+    * beta[i,j]: subject i's intervention effect for test food(j=0) or placebo(j=1)
+    * gut_state_mu: mean parameter of posterior normal distribution of scale parameter
+    * gut_state_sigma: scale parameter of posterior normal distribution of scale parameter
+    * beta_sigma[j]: scale parameter of posterior normal distribution of intervention effect for test food(j=0) or placebo(j=1)
+
+```
+        mean    se_mean sd      2.5%    5%      25%     50%     75%     95%     97.5%   n_eff   Rhat
+gut_state[0]    -4.332323922821513      0.08838509781942684     1.2054120233672116      -6.898597698973268      -6.390515824635212      -5.08772992240606       -4.259272622465383      -3.475084464643905
+      -2.542108525419354      -2.2752464242033543     186.0   1.0260160438672548
+```
+
 
 
 ## Notice
